@@ -10,7 +10,7 @@ function Users() {
     useEffect(() => {
         const fetchUsers = async () => {
             try {
-                const result = await axios.get("http://localhost:3001"); 
+                const result = await axios.get("https://crud-backend-1-hpf7.onrender.com"); 
                 setUsers(result.data);
             } catch (err) {
                 console.error("Error fetching users:", err);
